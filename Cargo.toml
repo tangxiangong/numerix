@@ -11,3 +11,4 @@ authors = [ "Xiangong Tang <tangxiangong@gmail.com>" ]
 nalgebra = "0.33.2"
 nalgebra-lapack = "0.25"
 nalgebra-sparse = "0.10"
+num = "0.4"

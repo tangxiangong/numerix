@@ -5,3 +5,5 @@ edition.workspace = true
 authors.workspace = true
 
 [dependencies]
+nalgebra = { workspace = true }
+num = { workspace = true }
