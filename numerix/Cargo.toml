@@ -1,0 +1,22 @@
+[package]
+name = "numerix"
+version.workspace = true
+edition.workspace = true
+description = "Numerical Recipes in Rust"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/tangxiangong/numerix"
+readme = "../README.md"
+
+[dependencies]
+numerix-core = { path = "../crates/numerix-core" }
+numerix-interpolation = { path = "../crates/numerix-interpolation" }
+numerix-linalg = { path = "../crates/numerix-linalg" }
+numerix-quadrature = { path = "../crates/numerix-quadrature" }
+numerix-random = { path = "../crates/numerix-random" }
+numerix-sparse = { path = "../crates/numerix-sparse" }
+
+
+[lib]
+name = "numerix"
+doctest = false
+  
