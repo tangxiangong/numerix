@@ -1,3 +1,6 @@
+#[doc = include_str!("../README.md")]
+pub mod array;
+
 pub fn add(left: u64, right: u64) -> u64 {
     left + right
 }
