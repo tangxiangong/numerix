@@ -1,7 +1,0 @@
-[package]
-name = "numerix-sparse"
-version.workspace = true
-edition.workspace = true
-authors.workspace = true
-
-[dependencies]
