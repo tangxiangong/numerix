@@ -1,13 +1,22 @@
-[workspace]
-resolver = "3"
-members = [ "numerix", "crates/*" ]
-
-[workspace.package]
+[package]
+name = "numerix"
 version = "0.1.0"
 edition = "2024"
 authors = [ "Xiangong Tang <tangxiangong@gmail.com>" ]
+description = "Numerical computing library for Rust"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/tangxiangong/numerix"
+readme = "README.md"
 
-[workspace.dependencies]
+[lib]
+doctest = false
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[dependencies]
 nalgebra = "0.33.2"
 nalgebra-lapack = "0.25"
 nalgebra-sparse = "0.10"
